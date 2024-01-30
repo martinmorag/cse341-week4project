@@ -38,7 +38,7 @@ app
         callbackURL: process.env.CALLBACK_URL
     },
     function(accessToken, refreshToken, profile, done) {
-        return done(profile, null);
+        return done(null, profile);
     }
 ));
 
